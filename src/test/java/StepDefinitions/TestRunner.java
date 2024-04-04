@@ -9,8 +9,10 @@ import io.cucumber.junit.Cucumber;
 @CucumberOptions(features="src/test/resources/Features", glue="StepDefinitions", monochrome=true, 
 	plugin = {"pretty", "html:target/HtmlReports/report.html",
 						"json:target/JsonReports/report.json",
-						"junit:target/JunitReports/report.xml"}		/*,
-	tags="@smoketest"*/)
+						"junit:target/JunitReports/report.xml"},
+	tags="@regressiontest"
+		)
+
 public class TestRunner {
 
 }

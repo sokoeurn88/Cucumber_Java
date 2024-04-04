@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="9.967" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="test google search functionality" name="Validate google search is working fine" time="5.119">
-<system-out><![CDATA[
-Given browser is opened.....................................................passed
-And user is on google page..................................................passed
-When user enter texts in text box...........................................passed
-And user hits enter.........................................................passed
-Then user is navigate to search result......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="test login functionality" name="check log in is successfull with valid credentails" time="4.675">
-<system-out><![CDATA[
-Given browser is opened sucessfully.........................................passed
-And user is on login page sucessfully.......................................passed
-When user enters username and password sucessfully..........................passed
-And user clicks on login sucessfully........................................passed
-Then user navigate to the home page sucessfully.............................passed
-]]></system-out>
-</testcase>
-<testcase classname="feature to test login functionality" name="Check login is successful with valid credentials" time="0.005">
+<testsuite name="Cucumber" time="6.752" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="test login functionality" name="check log in is successfull with valid credentails - Example #1.1" time="4.14">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;pagefactory.HomePage_PageFactory.showText()&quot; because &quot;this.home&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "pagefactory.HomePage_PageFactory.showText()" because "this.home" is null
+	at StepDefinitions.LoginDemoSteps_PageFactory.user_navigate_to_the_home_page_sucessfully(LoginDemoSteps_PageFactory.java:76)
+	at ✽.user navigate to the home page sucessfully(file:///C:/Users/sokoeurn%20chhay/eclipse-workspace2024Feb/Cucumber_Java/src/test/resources/Features/LoginDemo.feature:26)
+]]>
+</failure>
 <system-out><![CDATA[
 Given user is on login page.................................................passed
-When user enters username and password......................................passed
-And clicks on login button..................................................passed
-Then user navigated to home page............................................passed
+When When user enters <username> and <password> sucessfully.................passed
+Then user is in homepage....................................................passed
+Given browser is opened sucessfully.........................................passed
+And user is on login page sucessfully.......................................passed
+When user enters sok@gmail.com and abc123 sucessfully.......................passed
+And user clicks on login sucessfully........................................passed
+Then user navigate to the home page sucessfully.............................failed
+]]></system-out>
+</testcase>
+<testcase classname="test login functionality" name="check log in is successfull with valid credentails - Example #1.1" time="2.446">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;pagefactory.HomePage_PageFactory.showText()&quot; because &quot;this.home&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "pagefactory.HomePage_PageFactory.showText()" because "this.home" is null
+	at StepDefinitions.LoginDemoSteps_PageFactory.user_navigate_to_the_home_page_sucessfully(LoginDemoSteps_PageFactory.java:76)
+	at ✽.user navigate to the home page sucessfully(file:///C:/Users/sokoeurn%20chhay/eclipse-workspace2024Feb/Cucumber_Java/src/test/resources/Features/LoginDemo.feature:38)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+When When user enters <username> and <password> sucessfully.................passed
+Then user is in homepage....................................................passed
+Given browser is opened sucessfully.........................................passed
+And user is on login page sucessfully.......................................passed
+When user enters sok@gmail.com and abc123 sucessfully.......................passed
+And user clicks on login sucessfully........................................passed
+Then user navigate to the home page sucessfully.............................failed
 ]]></system-out>
 </testcase>
 </testsuite>
