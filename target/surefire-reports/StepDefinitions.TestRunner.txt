@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: StepDefinitions.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 6.349 s <<< FAILURE! - in StepDefinitions.TestRunner
+check log in is successfull with valid credentails #2(test login functionality)  Time elapsed: 3.14 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pagefactory.HomePage_PageFactory.showText()" because "this.home" is null
+
+check log in is successfull with valid credentails #3(test login functionality)  Time elapsed: 2.498 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pagefactory.HomePage_PageFactory.showText()" because "this.home" is null
+

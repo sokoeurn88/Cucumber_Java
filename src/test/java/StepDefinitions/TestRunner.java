@@ -10,6 +10,7 @@ import io.cucumber.junit.Cucumber;
 	plugin = {"pretty", "html:target/HtmlReports/report.html",
 						"json:target/JsonReports/report.json",
 						"junit:target/JunitReports/report.xml"},
+	/*plugin = {"json:target/cucumber.json"},*/
 	tags="@regressiontest"
 		)
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="6.752" tests="2" skipped="0" failures="2" errors="0">
-<testcase classname="test login functionality" name="check log in is successfull with valid credentails - Example #1.1" time="4.14">
+<testsuite name="Cucumber" time="5.722" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="test login functionality" name="check log in is successfull with valid credentails - Example #1.1" time="3.061">
 <failure type="java.lang.NullPointerException" message="Cannot invoke &quot;pagefactory.HomePage_PageFactory.showText()&quot; because &quot;this.home&quot; is null">
 <![CDATA[java.lang.NullPointerException: Cannot invoke "pagefactory.HomePage_PageFactory.showText()" because "this.home" is null
 	at StepDefinitions.LoginDemoSteps_PageFactory.user_navigate_to_the_home_page_sucessfully(LoginDemoSteps_PageFactory.java:76)
@@ -18,7 +18,7 @@ And user clicks on login sucessfully........................................pass
 Then user navigate to the home page sucessfully.............................failed
 ]]></system-out>
 </testcase>
-<testcase classname="test login functionality" name="check log in is successfull with valid credentails - Example #1.1" time="2.446">
+<testcase classname="test login functionality" name="check log in is successfull with valid credentails - Example #1.1" time="2.492">
 <failure type="java.lang.NullPointerException" message="Cannot invoke &quot;pagefactory.HomePage_PageFactory.showText()&quot; because &quot;this.home&quot; is null">
 <![CDATA[java.lang.NullPointerException: Cannot invoke "pagefactory.HomePage_PageFactory.showText()" because "this.home" is null
 	at StepDefinitions.LoginDemoSteps_PageFactory.user_navigate_to_the_home_page_sucessfully(LoginDemoSteps_PageFactory.java:76)
